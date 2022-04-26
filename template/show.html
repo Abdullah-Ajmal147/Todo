@@ -1,0 +1,7 @@
+<h1 style = "color : green " >Hello Todo list this is Show result  test screen!</h1>
+{% for todo in data %}
+ <h1>{{todo.title}}</h1>
+ <a href={% url 'del' todo.id  %} >{{todo.text}}</a>
+ <h1>{{todo.id}}</h1>
+
+{% endfor %}

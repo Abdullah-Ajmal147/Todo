@@ -1,0 +1,28 @@
+<style>
+    h1 {
+      text-align: center;
+      margin-top: 10%;
+    }
+    
+    h2 {
+      text-align: left;
+    }
+    
+    h3 {
+      text-align: right;
+    }
+    </style>
+<h1 style = "color : green " >Hello Todo list this is another test phase!</h1>
+<form method ="post">
+ {% csrf_token %}
+  <label for="title">Title</label><br />
+  <input type="text" name="title" id="title" />
+  <br>
+  <label for="text">Text</label><br />
+  <textarea name="text" id="text"></textarea>
+  <br><br>
+  <input type="submit" value="Submit" />
+
+</form>
+<br>
+<a href="/">Go Back</a>
